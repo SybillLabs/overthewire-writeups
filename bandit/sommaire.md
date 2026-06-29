@@ -9,14 +9,14 @@
 - [Level 3 -> 4](/bandit/level3to4/rapport.md)
 - [Level 4 -> 5](/bandit/level4to5/rapport.md)
 - [Level 5 -> 6](/bandit/level5to6/rapport.md)
+- [Level 6 -> 7](/bandit/level6to7/rapport.md)
 
 ## 📈 Progressions et statistiques
 
 | Statut | Nombre |
 |--------|--------|
-| ✅ Challenges validés | 6 |
-| 🔄 En Cours | 0 |
-| ⏳ Reste à faire | 29 |
+| ✅ Challenges validés | 8 |
+| ⏳ Reste à faire | 27 |
 
 ---
 
