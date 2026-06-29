@@ -14,9 +14,9 @@
 
 | Statut | Nombre |
 |--------|--------|
-| ✅ Challenges validés | 4 |
+| ✅ Challenges validés | 6 |
 | 🔄 En Cours | 0 |
-| ⏳ Reste à faire | 35 |
+| ⏳ Reste à faire | 29 |
 
 ---
 
