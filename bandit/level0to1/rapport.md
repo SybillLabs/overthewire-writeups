@@ -32,7 +32,7 @@ ssh -p 2220 bandit1@bandit.labs.overthewire.org
 
 Après avoir exécuté les étapes ci-dessus, j'ai réussi à me connecter au serveur de jeu en tant que `bandit1`. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit1`.
 
-![Connexion réussie](/bandit/level1/solution.png)
+![Connexion réussie](/bandit/level0to1/solution.png)
 
 ---
 

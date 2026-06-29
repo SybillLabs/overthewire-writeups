@@ -3,12 +3,12 @@
 ## 🧭 Navigation
 
 - [Level 0](/bandit/level0/rapport.md)
-- [Level 1](/bandit/level1/rapport.md)
-- [Level 2](/bandit/level2/rapport.md)
-- [Level 3](/bandit/level3/rapport.md)
-- [Level 4](/bandit/level4/rapport.md)
-- [Level 5](/bandit/level5/rapport.md)
-- [Level 6](/bandit/level6/rapport.md)
+- [Level 0 -> 1](/bandit/level0to1/rapport.md)
+- [Level 1 -> 2](/bandit/level1to2/rapport.md)
+- [Level 2 -> 3](/bandit/level2to3/rapport.md)
+- [Level 3 -> 4](/bandit/level3to4/rapport.md)
+- [Level 4 -> 5](/bandit/level4to5/rapport.md)
+- [Level 5 -> 6](/bandit/level5to6/rapport.md)
 
 ## 📈 Progressions et statistiques
 
