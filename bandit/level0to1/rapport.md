@@ -1,4 +1,4 @@
-# 🎯 OverTheWire - Bandit Level 1
+# 🎯 OverTheWire - Bandit Level 0 -> 1
 
 ## 🧭 Contexte
 

@@ -1,4 +1,4 @@
-# 🎯 OverTheWire - Bandit Level 5
+# 🎯 OverTheWire - Bandit Level 4 -> 5
 
 ## 🧭 Contexte
 Pour ce niveau, l'objectif est de trouver le mot de passe du compte `bandit5`. Voici les données qui m'ont été fournies :

@@ -1,4 +1,4 @@
-# 🎯 OverTheWire - Bandit Level 6
+# 🎯 OverTheWire - Bandit Level 5 -> 6
 
 ## 🧭 Contexte
 
