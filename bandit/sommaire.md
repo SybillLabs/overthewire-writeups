@@ -14,6 +14,7 @@
 - [Level 8 -> 9](/bandit/level8to9/rapport.md)
 - [Level 9 -> 10](/bandit/level9to10/rapport.md)
 - [Level 10 -> 11](/bandit/level10to11/rapport.md)
+- [Level 11 -> 12](/bandit/level11to12/rapport.md)
 
 ## 📈 Progressions et statistiques
 
