@@ -20,7 +20,7 @@ ls -l .
 base64 -d data.txt
     # base64 -d pour décoder les données encodées en base64 dans le fichier data.txt
 # J'affiche le contenu du fichier data.txt et je décode les données encodées en base64 pour trouver le mot de passe du niveau 11 que je récupère
-# Je me déconnecte du niveau 10 pour me connecter au niveau 11 avec les
+# Je me déconnecte du niveau 10 pour me connecter au niveau 11 avec les nouveaux identifiants
 exit
 ssh -p 2220 bandit11@bandit.labs.overthewire.org
 # Je suis connecté au niveau 11

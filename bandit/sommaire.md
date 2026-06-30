@@ -19,8 +19,8 @@
 
 | Statut | Nombre |
 |--------|--------|
-| ✅ Challenges validés | 12 |
-| ⏳ Reste à faire | 23 |
+| ✅ Challenges validés | 13 |
+| ⏳ Reste à faire | 22 |
 
 ---
 
