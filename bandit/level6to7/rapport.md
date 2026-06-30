@@ -31,7 +31,7 @@ cat /var/lib/dpkg/info/bandit7.password
 # Je me déconnecte du niveau 6 pour me connecter au niveau 7 avec les nouveaux identifiants
 exit
 ssh -p 2220 bandit7@bandit.labs.overthewire.org
-# Je suis connecté au niveau 7 avec le mot de passe récupéré dans le fichier
+# Je suis connecté au niveau 7
 ```
 
 ## ✅ Résultat
