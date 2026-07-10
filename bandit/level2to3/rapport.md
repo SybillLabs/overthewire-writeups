@@ -1,40 +1,30 @@
-# 🎯 OverTheWire - Bandit Level 2 -> 3
+<h1 align="center">🐧 OverTheWire - Bandit : Level 2 -> 3</h1>
 
-## 🧭 Contexte
+## 🧭 Objectif
+L'objectif est de trouver le mot de passe pour l'utilisateur `bandit3` en utilisant les informations trouvées avec l'utilisateur `bandit2`.
+> **Note** : Le mot de passe pour l'utilisateur `bandit3`se trouve dans un fichier nommé `--spaces in this filename--` situé dans le répertoire `home directory`.
 
-Pour ce niveau, l'objectif est de trouver le mot de passe du compte `bandit3`. Voici les données qui m'ont été fournies :
-- **Host** : bandit.labs.overthewire.org
-- **Port** : 2220
-- **Username** : bandit3
-- **Username précédent** : bandit2
-- **Password précédent** : (mot de passe du niveau 2)
-- **Indication** : Le mot de passe du prochain niveau est stocké dans un fichier nommé `--spaces in this filename--` situé dans le `home directory`.
-
-## 🛠️ Etapes de connexion
+## 🛠️ Les commandes utilisés
 
 ```bash
-# Connexion au serveur de jeu avec les identifiants du niveau précédent
-ssh -p 2220 bandit2@bandit.labs.overthewire.org
-# Une fois connecté, j'ai vérifié si je me trouvais dans le home directory de bandit2
-pwd
-# Je suis dans le home directory de bandit2, je vais chercher le fichier nommé --spaces in this filename--
-ls -l ./--spaces\ in\ this\ filename--
-# Je lis le contenu du fichier --spaces in this filename-- pour trouver le mot de passe du niveau 3
-cat ./--spaces\ in\ this\ filename--
-# Le mot de passe du niveau 3 est affiché dans le fichier --spaces in this filename-- que je note pour la prochaine connexion
-# Je me déconnecte du niveau 2
+# Je suis déjà connecté en tant que bandit2, je peux donc directement lire le fichier --spaces in this filename--
+# Toujours vérifié que le fichier existe et que j'ai les permissions nécessaires pour le lire
+ls -l /home/bandit2/--spaces in this filename--
+# Lecture du fichier --spaces in this filename-- pour obtenir le mot de passe
+cat /home/bandit2/--spaces in this filename--
+# Le mot de passe pour l'utilisateur bandit3 est maintenant affiché dans le terminal.
+# Je me déconnecte de bandit2 et me connecte à bandit3
 exit
-# Je me connecte au niveau 3 avec les nouveaux identifiants
 ssh -p 2220 bandit3@bandit.labs.overthewire.org
-# Je suis maintenant connecté au niveau 3
 ```
 
-## ✅ Résultat
+## 📌 Résultat
 
-Après avoir exécuté les étapes ci-dessus, j'ai réussi à me connecter au serveur de jeu en tant que `bandit3`. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit3`.
+Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur du jeu. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit3`.
 
 ![Connexion réussie](/bandit/level2to3/solution.png)
 
 ---
 
-[![Sommaire](https://img.shields.io/badge/Back%20to-Sommaire-blue?style=social&logo=github)](/bandit/sommaire.md)
+<p align="center">  <i>⬅️ <a href="/bandit/level1to2/rapport.md">Previous level</a></i> | <i><a href="/bandit/level3to4/rapport.md">Next level</a> ➡️</i></p>
+<p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>

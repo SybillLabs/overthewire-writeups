@@ -1,43 +1,30 @@
-# 🎯 OverTheWire - Bandit Level 3 ->4
+<h1 align="center">🐧 OverTheWire - Bandit : Level 3 -> 4</h1>
 
-## 🧭 Contexte
+## 🧭 Objectif
+L'objectif est de trouver le mot de passe pour l'utilisateur `bandit4` en utilisant les informations trouvées avec l'utilisateur `bandit3`.
+> **Note** : Le mot de passe pour l'utilisateur `bandit4`se trouve dans un fichier caché se trouvant dans le dossier `inhere` situé dans le répertoire `home directory`.
 
-Pour ce niveau, l'objectif est de trouver le mot de passe du compte `bandit4`. Voici les données qui m'ont été fournies :
-- **Host** : bandit.labs.overthewire.org
-- **Port** : 2220
-- **Username** : bandit4
-- **Username précédent** : bandit3
-- **Password précédent** : (mot de passe du niveau 3)
-- **Indication** : Le mot de passe du prochain niveau est stocké dans un fichier caché situé dans le dossier nommé `inhere` qui lui même est situé dans le `home directory`.
-
-## 🛠️ Etapes de connexion
+## 🛠️ Les commandes utilisés
 
 ```bash
-# Connexion au serveur de jeu avec les identifiants du niveau précédent
-ssh -p 2220 bandit3@bandit.labs.overthewire.org
-# Une fois connecté, j'ai vérifié si je me trouvais dans le home directory de bandit3
-pwd
-# Je suis dans le home directory de bandit3, je vais chercher le dossier inhere
-ls -l ./inhere
-# Je me rends dans le dossier inhere pour chercher les fichiers cachés
-cd inhere
-ls -la
-# Je trouve un fichier caché nommé, je lis son contenu pour trouver le mot de passe du niveau 4
-cat ./...Hiding-From-You
-# Le mot de passe du niveau 4 est affiché dans le fichier ...Hiding-From-You que je note pour la prochaine connexion
-# Je me déconnecte du niveau 3
+# Je suis déjà connecté en tant que bandit3, je peux donc directement trouver le dossier inhere et le fichier caché
+# Toujours vérifié que le dossier et le fichier existent et que j'ai les permissions nécessaires pour le lire
+ls -l /home/bandit3/inhere/
+# Lecture du fichier caché pour obtenir le mot de passe
+cat /home/bandit3/inhere/...Hiding-From-You
+# Le mot de passe pour l'utilisateur bandit4 est maintenant affiché dans le terminal.
+# Je me déconnecte de bandit3 et me connecte à bandit4
 exit
-# Je me connecte au niveau 4 avec les nouveaux identifiants
 ssh -p 2220 bandit4@bandit.labs.overthewire.org
-# Je suis maintenant connecté au niveau 4
 ```
 
-## ✅ Résultat
+## 📌 Résultat
 
-Après avoir exécuté les étapes ci-dessus, j'ai réussi à me connecter au serveur de jeu en tant que `bandit4`. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit4`.
+Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur du jeu. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit4`.
 
 ![Connexion réussie](/bandit/level3to4/solution.png)
 
 ---
 
-[![Sommaire](https://img.shields.io/badge/Back%20to-Sommaire-blue?style=social&logo=github)](/bandit/sommaire.md)
+<p align="center">  <i>⬅️ <a href="/bandit/level2to3/rapport.md">Previous level</a></i> | <i><a href="/bandit/level4to5/rapport.md">Next level</a> ➡️</i></p>
+<p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>

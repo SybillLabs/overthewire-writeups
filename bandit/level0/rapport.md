@@ -18,4 +18,4 @@ Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur 
 ---
 
 <p align="center">  <i>➡️ <a href="/bandit/level0to1/rapport.md">Next level</a></i></p>
-<p align="center">  <i>➡️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>
+<p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>

@@ -1,44 +1,33 @@
-# 🎯 OverTheWire - Bandit Level 4 -> 5
+<h1 align="center">🐧 OverTheWire - Bandit : Level 4 -> 5</h1>
 
-## 🧭 Contexte
-Pour ce niveau, l'objectif est de trouver le mot de passe du compte `bandit5`. Voici les données qui m'ont été fournies :
-- **Host** : bandit.labs.overthewire.org
-- **Port** : 2220
-- **Username** : bandit5
-- **Username précédent** : bandit4
-- **Password précédent** : (mot de passe du niveau 4)
-- **Indication** : Le mot de passe du prochain niveau est stocké dans un fichier situé dans le dossier `inhere`. Cependant, ce dossier contient plusieurs fichiers, et le mot de passe est stocké dans le fichier qui est seulement lisible par un humain.
+## 🧭 Objectif
+L'objectif est de trouver le mot de passe pour l'utilisateur `bandit5` en utilisant les informations trouvées avec l'utilisateur `bandit4`.
+> **Note** : Le mot de passe pour l'utilisateur `bandit5`se trouve dans un fichier lisible seulement par l'humain et se trouvant dans le dossier `inhere` situé dans le répertoire `home directory`.
 
-## 🛠️ Etapes de connexion
+## 🛠️ Les commandes utilisés
 
 ```bash
-# Connexion au serveur de jeu avec les identifiants du niveau précédent
-ssh -p 2220 bandit4@bandit.labs.overthewire.org
-# Une fois connecté, j'ai vérifié si je me trouvais dans le home directory de bandit4
-pwd
-# Je suis dans le home directory de bandit4, je vais chercher le dossier inhere
-ls -l ./inhere
-# Je me rends dans le dossier inhere pour chercher les fichiers
-cd inhere
-ls -l
-# Je trouve plusieurs fichiers, je vais chercher celui qui est seulement lisible par un humain grâce à la commande file 
-file ./-file0*
-# Je trouve le fichier qui est seulement lisible par un humain (noté ASCII text), je lis son contenu pour trouver le mot de passe du niveau 5
-cat ./-file07
-# Le mot de passe du niveau 5 est affiché dans le fichier -file07 que je note pour la prochaine connexion
-# Je me déconnecte du niveau 4
+# Je suis déjà connecté en tant que bandit4, je peux donc directement trouver le dossier inhere et le fichier lisible seulement par l'humain
+# Toujours vérifié que le dossier et le fichier existent et que j'ai les permissions nécessaires pour le lire
+ls -l /home/bandit4/inhere/
+# Maintenant il faut trouver le bon fichier lisible seulement par l'humain
+file /home/bandit4/inhere/* | grep "ASCII text"
+    # "ASCII text" permet de savoir que le fichier est lisible seulement par l'humain
+# Lecture du fichier lisible seulement par l'humain pour obtenir le mot de passe
+cat /home/bandit4/inhere/-file07
+# Le mot de passe pour l'utilisateur bandit5 est maintenant affiché dans le terminal.
+# Je me déconnecte de bandit4 et me connecte à bandit5
 exit
-# Je me connecte au niveau 5 avec les nouveaux identifiants
 ssh -p 2220 bandit5@bandit.labs.overthewire.org
-# Je suis maintenant connecté au niveau 5
 ```
 
-## ✅ Résultat
+## 📌 Résultat
 
-Après avoir exécuté les étapes ci-dessus, j'ai réussi à me connecter au serveur de jeu en tant que `bandit5`. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit5`.
+Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur du jeu. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit5`.
 
 ![Connexion réussie](/bandit/level4to5/solution.png)
 
 ---
 
-[![Sommaire](https://img.shields.io/badge/Back%20to-Sommaire-blue?style=social&logo=github)](/bandit/sommaire.md)
+<p align="center">  <i>⬅️ <a href="/bandit/level3to4/rapport.md">Previous level</a></i> | <i><a href="/bandit/level5to6/rapport.md">Next level</a> ➡️</i></p>
+<p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>

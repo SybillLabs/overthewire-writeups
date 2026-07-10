@@ -55,4 +55,4 @@ Ce sommaire sert de point d’entrée à l’ensemble de mes rapports, rédigés
 
 ---
 
-<p align="center">  <i>➡️ Back to <a href="/README.md">Main Page</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>
+<p align="center">  <i>↪️ Back to <a href="/README.md">Main Page</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>
