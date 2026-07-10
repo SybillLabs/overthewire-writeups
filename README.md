@@ -1,4 +1,4 @@
-<p style="text-align: center; font-size: 26px;">🎯 OverTheWire Wargames</p>
+<p align="center" style="font-size: 26px;">🎯 OverTheWire Wargames</p>
 
 ---
 
