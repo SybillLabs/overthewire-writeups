@@ -1,6 +1,4 @@
-<p align="center" style="font-size: 26px;">🎯 OverTheWire Wargames</p>
-
----
+<h1 align="center">🎯 OverTheWire Wargames</h1>
 
 <p align="center">
     <img src="https://img.shields.io/badge/Linux-%23FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux Badge" />

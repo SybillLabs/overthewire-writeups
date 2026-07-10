@@ -1,6 +1,4 @@
-<p style="text-align: center; font-size: 26px;">🐧 OverTheWire - Bandit : Level 0 </p>
-
----
+<h1 align="center">🐧 OverTheWire - Bandit : Level 0</h1>
 
 ## 🧭 Objectif
 L'objectif est de se connecter au serveur OverTheWire via une connexion SSH avec les identifiants fournis.

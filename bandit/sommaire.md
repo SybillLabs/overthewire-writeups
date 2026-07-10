@@ -1,6 +1,4 @@
-<p style="text-align: center; font-size: 26px;">🐧 OverTheWire - Bandit : Summary </p>
-
----
+<h1 align="center">🐧 OverTheWire - Bandit : Summary </h1>
 
 ## 🧭 Contexte
 
