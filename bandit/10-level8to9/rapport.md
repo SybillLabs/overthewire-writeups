@@ -1,38 +1,30 @@
-# 🎯 OverTheWire - Bandit Level 8 -> 9
+<h1 align="center">🐧 OverTheWire - Bandit : Level 8 -> 9</h1>
 
-## 🧭 Contexte
+## 🧭 Objectif
+L'objectif est de trouver le mot de passe pour l'utilisateur `bandit9` en utilisant les informations trouvées avec l'utilisateur `bandit8`.
+> **Note** : Le mot de passe pour l'utilisateur `bandit9`se trouve dans le fichier `data.txt` et c'est la seule ligne de texte qui n'apparait qu'une seule fois dans le fichier.
 
-Pour ce niveau, l'objectif est de trouver le mot de passe du compte `bandit9`. Voici les données qui m'ont été fournies :
-- **Host** : bandit.labs.overthewire.org
-- **Port** : 2220
-- **Username** : bandit9
-- **Username précédent** : bandit8
-- **Password précédent** : (mot de passe du niveau 8)
-- **Indication** : Le mot de passe est stocké dans un fichier nommé `data.txt`et c'est la seule ligne du fichier qui n'apparait qu'une seule fois.
-
-## 🛠️ Etapes de connexion
+## 🛠️ Les commandes utilisés
 
 ```bash
-# Connexion au serveur de jeu avec les identifiants du niveau précédent
-ssh -p 2220 bandit8@bandit.labs.overthewire.org
-# Comme le fichier contenant le mot de passe est stocké dans un fichier nommé data.txt et c'est la seule ligne du fichier qui n'apparait qu'une seule fois, je vais chercher dans le répertoire home de l'utilisateur bandit8
-ls -l .
+# Je suis déjà connecté en tant que bandit8, je peux donc directement trouver le fichier data.txt.
+ls -l /home/bandit8/
 sort data.txt | uniq -u
     # sort pour trier les lignes du fichier data.txt
     # uniq -u pour ne garder que les lignes uniques du fichier data.txt
-# J'affiche le contenu du fichier data.txt et je cherche la seule ligne qui n'apparait qu'une seule fois pour trouver le mot de passe du niveau 9 que je récupère
-# Je me déconnecte du niveau 8 pour me connecter au niveau 9 avec les nouveaux identifiants
+# Le mot de passe pour l'utilisateur bandit9 est maintenant affiché dans le terminal.
+# Je me déconnecte de bandit8 et me connecte à bandit9
 exit
 ssh -p 2220 bandit9@bandit.labs.overthewire.org
-# Je suis connecté au niveau 9
 ```
 
-## ✅ Résultat
+## 📌 Résultat
 
-Après avoir exécuté les étapes ci-dessus, j'ai réussi à me connecter au serveur de jeu en tant que `bandit9`. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit9`.
+Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur du jeu. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit9`.
 
-![Connexion réussie](/bandit/level8to9/solution.png)
+![Connexion réussie](/bandit/10-level8to9/solution.png)
 
 ---
 
-[![Sommaire](https://img.shields.io/badge/Back%20to-Sommaire-blue?style=social&logo=github)](/bandit/sommaire.md)
+<p align="center">  <i>⬅️ <a href="/bandit/09-level7to8/rapport.md">Previous level</a></i> | <i><a href="/bandit/11-level9to10/rapport.md">Next level</a> ➡️</i></p>
+<p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>

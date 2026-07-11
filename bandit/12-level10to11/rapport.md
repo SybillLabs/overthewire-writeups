@@ -1,37 +1,30 @@
-# 🎯 OverTheWire - Bandit Level 10 -> 11
+<h1 align="center">🐧 OverTheWire - Bandit : Level 10 -> 11</h1>
 
-## 🧭 Contexte
+## 🧭 Objectif
+L'objectif est de trouver le mot de passe pour l'utilisateur `bandit11` en utilisant les informations trouvées avec l'utilisateur `bandit10`.
+> **Note** : Le mot de passe pour l'utilisateur `bandit11`se trouve dans le fichier `data.txt` dans l'une des rares `strings`lisible par l'humain et précédé par plusieurs `=`.
 
-Pour ce niveau, l'objectif est de trouver le mot de passe du compte `bandit11`. Voici les données qui m'ont été fournies :
-- **Host** : bandit.labs.overthewire.org
-- **Port** : 2220
-- **Username** : bandit11
-- **Username précédent** : bandit10
-- **Password précédent** : (mot de passe du niveau 10)
-- **Indication** : Le mot de passe est stocké dans un fichier nommé `data.txt` qui contient des données encodées en `base64`.
-
-## 🛠️ Etapes de connexion
+## 🛠️ Les commandes utilisés
 
 ```bash
-# Connexion au serveur de jeu avec les identifiants du niveau précédent
-ssh -p 2220 bandit10@bandit.labs.overthewire.org
-# Comme le fichier contenant le mot de passe est stocké dans un fichier nommé data.txt qui contient des données encodées en base64, je vais chercher dans le répertoire home de l'utilisateur bandit10
-ls -l .
-base64 -d data.txt
-    # base64 -d pour décoder les données encodées en base64 dans le fichier data.txt
-# J'affiche le contenu du fichier data.txt et je décode les données encodées en base64 pour trouver le mot de passe du niveau 11 que je récupère
-# Je me déconnecte du niveau 10 pour me connecter au niveau 11 avec les nouveaux identifiants
+# Je suis déjà connecté en tant que bandit10, je peux donc directement trouver le fichier data.txt.
+ls -l /home/bandit10/
+strings data.txt | grep ==
+    # strings pour afficher les chaînes de caractères lisibles par un humain dans le fichier data.txt
+    # | grep == pour ne garder que les chaînes de caractères précédées par plusieurs =
+# Le mot de passe pour l'utilisateur bandit11 est maintenant affiché dans le terminal.
+# Je me déconnecte de bandit10 et me connecte à bandit11
 exit
 ssh -p 2220 bandit11@bandit.labs.overthewire.org
-# Je suis connecté au niveau 11
 ```
 
-## ✅ Résultat
+## 📌 Résultat
 
-Après avoir exécuté les étapes ci-dessus, j'ai réussi à me connecter au serveur de jeu en tant que `bandit11`. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit11`.
+Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur du jeu. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit11`.
 
-![Connexion réussie](/bandit/level10to11/solution.png)
+![Connexion réussie](/bandit/12-level10to11/solution.png)
 
 ---
 
-[![Sommaire](https://img.shields.io/badge/Back%20to-Sommaire-blue?style=social&logo=github)](/bandit/sommaire.md)
+<p align="center">  <i>⬅️ <a href="/bandit/11-level9to10/rapport.md">Previous level</a></i> | <i><a href="/bandit/13-level11to12/rapport.md">Next level</a> ➡️</i></p>
+<p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>
