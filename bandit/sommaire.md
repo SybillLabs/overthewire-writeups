@@ -17,20 +17,20 @@ Ce sommaire sert de point d’entrée à l’ensemble de mes rapports, rédigés
 
 | # | Level | Statut : ✅/❌ |
 |:-:|-------| :-------------: |
-| 1 | [Level 0](/bandit/level0/rapport.md) | ✅ |
-| 2 | [Level 0 -> 1](/bandit/level0to1/rapport.md) | ✅ |   
-| 3 | [Level 1 -> 2](/bandit/level1to2/rapport.md) | ✅ |   
-| 4 | [Level 2 -> 3](/bandit/level2to3/rapport.md) | ✅ |   
-| 5 | [Level 3 -> 4](/bandit/level3to4/rapport.md) | ✅ |   
-| 6 | [Level 4 -> 5](/bandit/level4to5/rapport.md) | ✅ |  
-| 7 | [Level 5 -> 6](/bandit/level5to6/rapport.md) | ✅ |  
-| 8 | [Level 6 -> 7](/bandit/level6to7/rapport.md) | ✅ |  
-| 9 | [Level 7 -> 8](/bandit/level7to8/rapport.md) | ✅ |  
-| 10 | [Level 8 -> 9](/bandit/level8to9/rapport.md) | ✅ |  
-| 11 | [Level 9 -> 10](/bandit/level9to10/rapport.md) | ✅ |
-| 12 | [Level 10 -> 11](/bandit/level10to11/rapport.md) | ✅ |
-| 13 | [Level 11 -> 12](/bandit/level11to12/rapport.md) | ✅ |
-| 14 | [Level 12 -> 13](/bandit/level12to13/rapport.md) | ❌ |
+| 1 | [Level 0](/bandit/01-level0/rapport.md) | ✅ |
+| 2 | [Level 0 -> 1](/bandit/02-level0to1/rapport.md) | ✅ |   
+| 3 | [Level 1 -> 2](/bandit/03-level1to2/rapport.md) | ✅ |   
+| 4 | [Level 2 -> 3](/bandit/04-level2to3/rapport.md) | ✅ |   
+| 5 | [Level 3 -> 4](/bandit/05-level3to4/rapport.md) | ✅ |   
+| 6 | [Level 4 -> 5](/bandit/06-level4to5/rapport.md) | ✅ |  
+| 7 | [Level 5 -> 6](/bandit/07-level5to6/rapport.md) | ✅ |  
+| 8 | [Level 6 -> 7](/bandit/08-level6to7/rapport.md) | ✅ |  
+| 9 | [Level 7 -> 8](/bandit/09-level7to8/rapport.md) | ✅ |  
+| 10 | [Level 8 -> 9](/bandit/10-level8to9/rapport.md) | ✅ |  
+| 11 | [Level 9 -> 10](/bandit/11-level9to10/rapport.md) | ✅ |
+| 12 | [Level 10 -> 11](/bandit/12-level10to11/rapport.md) | ✅ |
+| 13 | [Level 11 -> 12](/bandit/13-level11to12/rapport.md) | ✅ |
+| 14 | [Level 12 -> 13](/bandit/14-level12to13/rapport.md) | ❌ |
 | 15 | Level 13 -> 14 | ❌ |
 | 16 | Level 14 -> 15 | ❌ |
 | 17 | Level 15 -> 16 | ❌ |
