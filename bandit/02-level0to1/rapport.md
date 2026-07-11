@@ -22,9 +22,9 @@ ssh -p 2220 bandit1@bandit.labs.overthewire.org
 
 Après avoir exécuté la commande SSH, j'ai réussi à me connecter au serveur du jeu. Le message de bienvenue indique que je suis maintenant connecté en tant que `bandit1`.
 
-![Connexion réussie](/bandit/level0to1/solution.png)
+![Connexion réussie](/bandit/02-level0to1/solution.png)
 
 ---
 
-<p align="center">  <i>⬅️ <a href="/bandit/level0/rapport.md">Previous level</a></i> | <i><a href="/bandit/level1to2/rapport.md">Next level</a> ➡️</i></p>
+<p align="center">  <i>⬅️ <a href="/bandit/01-level0/rapport.md">Previous level</a></i> | <i><a href="/bandit/03-level1to2/rapport.md">Next level</a> ➡️</i></p>
 <p align="center">  <i>↪️ Back to <a href="/bandit/sommaire.md">Summary</a></i> | <i>📍 From <a href="https://github.com/SybillLabs">SybillLabs</a></i></p>
