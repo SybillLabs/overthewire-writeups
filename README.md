@@ -53,7 +53,7 @@ OverTheWire/
 
 ## ⚠️ Disclaimer
 
-- Ce dépôt a une vocation **pédagogique** et **personnelle**. Les contenus publiés sont destinés à documenter mes travaux et ne doivent être utilisés qu’à des fins d’apprentissage et de bonnes pratiques.
+- Ce dépôt a une vocation **personnelle**. Les contenus publiés sont destinés à documenter mes travaux et ne doivent être utilisés qu’à des fins d’apprentissage et de bonnes pratiques.
 - Les write-up respectent les règles OverTheWire : aucun mot de passe, fichier ou contenu protégé n’est publié.  
 - Challenges fournis par OverTheWire : https://overthewire.org
 
