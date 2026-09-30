@@ -22,5 +22,5 @@ ssh -p 2220 bandit1@bandit.labs.overthewire.org
     <i>⬅️ <a href="/bandit/01-level0/rapport.md">Previous level</a></i> | <i><a href="/bandit/03-level1to2/rapport.md">Next level</a> ➡️</i>
 </p>
 <p align="center">  
-    <i>↪️ Back to <a href="/README.md">OverTheWire : Bandit</a></i>
+    <i>↪️ Back to <a href="/bandit/sommaire.md">OverTheWire : Bandit</a></i>
 </p>

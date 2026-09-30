@@ -20,5 +20,5 @@ ssh -p 2220 bandit0@bandit.labs.overthewire.org
 </p>
 
 <p align="center">  
-    <i>↪️ Back to <a href="/README.md">OverTheWire : Bandit</a></i>
+    <i>↪️ Back to <a href="/bandit/sommaire.md">OverTheWire : Bandit</a></i>
 </p>
