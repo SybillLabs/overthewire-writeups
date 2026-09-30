@@ -1,11 +1,15 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 0</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit0`
+- **Objectif** : se connecter au compte `bandit0`
 - **Commandes utilisées** : 
 ```bash
 ssh -p 2220 bandit0@bandit.labs.overthewire.org
 ```
+
+## `> methods`
+- **Constat** : le mot de passe est donné par **OverTheWire**
+- **Action** : connexion SSH sur le `port 2220` sur le serveur **bandit.labs.overthewire.org**
 
 ## `> results`
 

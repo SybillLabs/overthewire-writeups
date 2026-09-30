@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 0 -> 1</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit1`
+- **Objectif** : récupérer le mot de passe du compte `bandit1` depuis `bandit0`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit0/readme
@@ -9,6 +9,10 @@ cat /home/bandit0/readme
 exit
 ssh -p 2220 bandit1@bandit.labs.overthewire.org
 ```
+
+## `> methods`
+- **Constat** : le mot de passe est stocké dans un fichier nommé `readme`, situé dans le répertoire personnel de `bandit0`
+- **Action** : lecture du fichier avec `cat`
 
 ## `> results`
 

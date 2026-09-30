@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 1 -> 2</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit2`
+- **Objectif** : récupérer le mot de passe du compte `bandit2` depuis `bandit1`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit1/-
@@ -9,6 +9,10 @@ cat /home/bandit1/-
 exit
 ssh -p 2220 bandit2@bandit.labs.overthewire.org
 ```
+
+## `> methods`
+- **Constat** : le mot de passe est stocké dans un fichier nommé `-`, situé dans le répertoire personnel de `bandit1`
+- **Action** : lecture du fichier avec `cat`, en donnant son chemin absolu pour que le nom `-` ne soit pas interprété comme l'entrée standard
 
 ## `> results`
 

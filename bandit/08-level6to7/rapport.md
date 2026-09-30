@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 6 -> 7</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit7`
+- **Objectif** : récupérer le mot de passe du compte `bandit7` depuis `bandit6`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit5/inhere/
@@ -10,6 +10,13 @@ cat /var/lib/dpkg/info/bandit7.password
 exit
 ssh -p 2220 bandit7@bandit.labs.overthewire.org
 ```
+
+## `> methods`
+- **Constat** : le mot de passe est stocké dans un fichier dont l'emplacement sur le serveur est inconnu, mais dont les propriétés sont connues :
+    - propriétaire : utilisateur `bandit7`
+    - groupe propriétaire : `bandit6`
+    - taille : 33 octets
+- **Action** : recherche du fichier depuis la racine (`/`) avec `find`, en filtrant sur le type fichier, le propriétaire, le groupe et la taille, erreurs d'accès refusé ignorées (`2>/dev/null`), puis lecture du fichier trouvé avec `cat`
 
 ## `> results`
 

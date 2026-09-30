@@ -12,7 +12,7 @@ ssh -p 2220 bandit8@bandit.labs.overthewire.org
 
 ## `> methods`
 - **Constat** : le mot de passe se trouve dans `data.txt`, à côté du mot **millionth**
-- **Action** : 
+- **Action** : lecture de `data.txt` avec `cat`, puis filtrage des lignes contenant **millionth** avec `grep`
 
 ## `> results`
 
