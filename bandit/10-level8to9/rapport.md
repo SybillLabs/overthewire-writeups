@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 8 -> 9</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit9`
+- **Objectif** : récupérer le mot de passe du compte `bandit9` depuis `bandit8`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit8/
@@ -13,7 +13,6 @@ ssh -p 2220 bandit9@bandit.labs.overthewire.org
 ## `> methods`
 - **Constat** : le mot de passe se trouve dans `data.txt`, sur la seule ligne non dupliquée
 - **Action** : tri du fichier puis filtrage des lignes uniques (`sort | uniq -u`), le tri préalable étant requis car `uniq` ne détecte que les doublons adjacents
-- **Résultat** : mot de passe isolé en une commande, connexion à `bandit9` validée
 
 ## `> results`
 

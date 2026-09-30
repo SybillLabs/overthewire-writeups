@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 10 -> 11</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit11`
+- **Objectif** : récupérer le mot de passe du compte `bandit11` depuis `bandit10`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit10/
@@ -11,8 +11,8 @@ ssh -p 2220 bandit11@bandit.labs.overthewire.org
 ```
 
 ## `> methods`
-- Mot de passe stocké dans un fichier **data.txt**, où un encodage `Base64` a été appliqué
-- Commande `base64 -d` retenu, outil natif pour décoder du **Base64**
+- **Constat** : le mot de passe se trouve dans `data.txt`, encodé en **Base64**
+- **Action** : décodage du contenu de `data.txt` avec `base64 -d`, résultat lu directement en sortie standard
 
 ## `> results`
 

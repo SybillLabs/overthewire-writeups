@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 9 -> 10</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit10`
+- **Objectif** : récupérer le mot de passe du compte `bandit10` depuis `bandit9`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit9/
@@ -11,8 +11,8 @@ ssh -p 2220 bandit10@bandit.labs.overthewire.org
 ```
 
 ## `> methods`
-- Mot de passe stocké dans **data.txt**, fichier **binaire** non lisible en clair
-- `strings` retenu pour extraire les chaînes lisibles du binaire ; `grep '=='` pour isoler le mot de passe parmi les chaînes extraites
+- **Constat** : le mot de passe se trouve dans `data.txt`, parmi les rares chaînes lisibles d'un contenu majoritairement illisible, précédé de plusieurs caractères `=`
+- **Action** : extraction des chaînes lisibles de `data.txt` avec `strings`, puis filtrage des lignes contenant `==` avec `grep`
 
 ## `> results`
 

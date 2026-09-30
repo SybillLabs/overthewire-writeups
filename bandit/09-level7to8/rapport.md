@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 7 -> 8</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit8`
+- **Objectif** : récupérer le mot de passe du compte `bandit8` depuis `bandit7`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit7/
@@ -9,6 +9,10 @@ cat /home/bandit7/data.txt | grep "millionth"
 exit
 ssh -p 2220 bandit8@bandit.labs.overthewire.org
 ```
+
+## `> methods`
+- **Constat** : le mot de passe se trouve dans `data.txt`, à côté du mot **millionth**
+- **Action** : 
 
 ## `> results`
 

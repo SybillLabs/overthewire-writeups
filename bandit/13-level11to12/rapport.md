@@ -1,7 +1,7 @@
 <h1 align="center">🐧 OverTheWire - Bandit : Level 11 -> 12</h1>
 
 ## `> quickstart`
-- **Objectif** : se connecter au serveur **OverTheWire** via une connexion SSH en tant que `bandit12`
+- **Objectif** : récupérer le mot de passe du compte `bandit12` depuis `bandit11`
 - **Commandes utilisées** : 
 ```bash
 ls -l /home/bandit11/
@@ -11,8 +11,8 @@ ssh -p 2220 bandit12@bandit.labs.overthewire.org
 ```
 
 ## `> methods`
-- Mot de passe stocké dans un fichier **data.txt**, où un décalage `Rot13` a été appliqué
-- Commande `tr` retenu, le **Rot13** est une simple substitution de caractères, cœur de la fonction de `tr`
+- **Constat** : le mot de passe se trouve dans `data.txt`, chiffré par substitution **ROT13**
+- **Action** : décodage du contenu de `data.txt` avec `tr`, chaque lettre étant remplacée par celle située 13 rangs plus loin, résultat lu directement en sortie standard
 
 ## `> results`
 
